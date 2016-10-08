@@ -31,7 +31,6 @@ print max(y_test.mean(),1 - y_test.mean())
 #null accuracy source
 # so what does it means?? it actually says that the model must perform better than this figure , this is the max figure a model is getting if it is correctly measuring one of the two classes
 
-'''
 confusion = metrics.confusion_matrix(y_test,y_class_pred)
 
 TP = confusion[1,1]
@@ -70,5 +69,3 @@ print metrics.precision_score(y_test,y_class_pred)
 
 #print X_test[y_class_pred<y_test]
 #FN :: print X_test[y_test<y_class_pred]
-
-'''
